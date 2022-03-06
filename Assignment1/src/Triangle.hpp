@@ -10,7 +10,7 @@
 using namespace Eigen;
 class Triangle
 {
-  public:
+public:
     Vector3f v[3]; /*the original coordinates of the triangle, v0, v1, v2 in
                       counter clockwise order*/
     /*Per vertex values*/

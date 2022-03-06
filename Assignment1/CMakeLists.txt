@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(Rasterizer)
+
+project(Assignment1)
 
 set(OpenCV_DIR "/usr/local/Cellar/opencv/4.5.4_3/lib/cmake/opencv4/")
 
@@ -9,5 +10,11 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(/usr/local/include)
 
-add_executable(Rasterizer src/main.cpp src/rasterizer.hpp src/rasterizer.cpp src/Triangle.hpp src/Triangle.cpp)
-target_link_libraries(Rasterizer ${OpenCV_LIBRARIES})
+add_executable(${PROJECT_NAME}
+        src/main.cpp
+        src/rasterizer.hpp
+        src/rasterizer.cpp
+        src/Triangle.hpp
+        src/Triangle.cpp)
+
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBRARIES})
